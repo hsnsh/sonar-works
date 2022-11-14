@@ -16,4 +16,18 @@ public class TestClassTests
         // Assert
         sut.Balance.Should().Be(0);
     }
+
+    [Fact]
+    public void Add_ShouldAddToBalanceValue()
+    {
+        // Arrange
+        var sut = new TestClass();
+        var expectedValue = sut.Balance;
+
+        // Act
+        sut.Add(7);
+
+        // Assert
+        sut.Balance.Should().Be(expectedValue + 7);
+    }
 }
