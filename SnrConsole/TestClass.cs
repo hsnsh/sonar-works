@@ -13,4 +13,14 @@ public class TestClass
     {
         this.Balance = 0;
     }
+    
+    public void Subtract(int x)
+    {
+        this.Balance += x;
+    }
+    
+    public void Pow(int x)
+    {
+        this.Balance *= x;
+    }
 }
