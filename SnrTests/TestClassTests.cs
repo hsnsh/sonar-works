@@ -32,7 +32,7 @@ public class TestClassTests
     }
     
     [Fact]
-    public void Subtract_ShouldAddToBalanceValue()
+    public void Subtract_ShouldSubToBalanceValue()
     {
         // Arrange
         var sut = new TestClass();
@@ -43,5 +43,19 @@ public class TestClassTests
 
         // Assert
         sut.Balance.Should().Be(expectedValue - 7);
+    }
+    
+    [Fact]
+    public void Pow_ShouldPowToBalanceValue()
+    {
+        // Arrange
+        var sut = new TestClass();
+        var expectedValue = sut.Balance;
+
+        // Act
+        sut.Subtract(7);
+
+        // Assert
+        sut.Balance.Should().Be(expectedValue * 7);
     }
 }
