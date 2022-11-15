@@ -16,7 +16,7 @@ public class TestClass
 
     public void Subtract(decimal x)
     {
-        this.Balance *= x;
+        this.Balance -= x;
     }
 
     public void Pow(decimal x)
