@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   build:
-
+    name: Build and Test Job
     runs-on: ubuntu-latest
 
     steps:
