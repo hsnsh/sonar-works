@@ -351,6 +351,9 @@ MigrationBackup/
 # Rider
 .idea/
 
+# Visual Studio Code
+.vscode/
+
 .sonarqube/
 AppCoverageReport/
 AppCoverageReport.*
