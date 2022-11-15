@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - master
-      - dev
-      - feat/*
-      - hot/*
-      - rel/*
+      # - dev
+      # - feat/*
+      # - hot/*
+      # - rel/*
   pull_request:
     types: [opened, synchronize, reopened]
   workflow_dispatch:
